@@ -88,23 +88,17 @@ export default {
 }
 
 @media (min-width: 712px) {
-  /* .buttons_block-desc{
-    display: flex;
-} */
-
-
-
   .product_details-right {
     padding: 0 40px;
   }
 
   .size_block {
-    padding: unset;
+    padding: unset !important;
     margin-top: 31px;
   }
 
   .color_picker {
-    padding: unset;
+    padding: unset !important;
     margin-top: 34px;
   }
 
@@ -114,7 +108,7 @@ export default {
 }
 
 @media (min-width: 1020px) {
-    .product_details-right .buttons_block-desc {
+  .product_details-right .buttons_block-desc {
     display: flex;
     gap: 10px;
     margin-top: 36px;
