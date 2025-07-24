@@ -19,6 +19,8 @@ $ npm run generate
 
 ## Project link
 
+https://stik-mu.vercel.app/
+
 
 
 ### Contacts for communication on all issues
