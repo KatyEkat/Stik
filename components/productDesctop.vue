@@ -85,10 +85,15 @@ export default {
   .buttons_block-desc {
     display: none;
   }
-
 }
 
 @media (min-width: 712px) {
+  /* .buttons_block-desc{
+    display: flex;
+} */
+
+
+
   .product_details-right {
     padding: 0 40px;
   }
@@ -109,8 +114,7 @@ export default {
 }
 
 @media (min-width: 1020px) {
-
-  .buttons_block-desc {
+    .product_details-right .buttons_block-desc {
     display: flex;
     gap: 10px;
     margin-top: 36px;
