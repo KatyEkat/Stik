@@ -60,7 +60,7 @@ export default {
   gap: 9px;
   padding: 31px 16px 0 16px;
 
-  .label {
+  &-label {
     color: rgb(79, 79, 79);
     font-family: "Helvetica";
     font-size: 10px;
@@ -131,8 +131,6 @@ export default {
       /* padding: 32px 0 0 40px; */
       padding: 31px 0 0 40px;
     }
-
-
   }
 
   @media (min-width: 1020px) {
