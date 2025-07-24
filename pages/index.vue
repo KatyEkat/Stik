@@ -34,16 +34,24 @@ export default {
 .product_main-layout {
   display: flex;
   flex-direction: column;
-  padding: 42px 40px;
 
   @media (min-width: 1020px) {
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 72px;
+    justify-content: center;
+
+    .content-desctop {
+      padding: unset;
+    }
   }
 
   @media (min-width: 1200px) {
     gap: 60px;
+
+    .product_main-layout {
+      display: flex;
+      justify-content: center;
+      padding: unset;
+    }
   }
 }
 </style>

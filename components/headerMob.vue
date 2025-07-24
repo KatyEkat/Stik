@@ -134,7 +134,6 @@
   align-items: center;
   padding: 16px;
   background: white;
-  border-bottom: 1px solid #eee;
 
   .logo {
     cursor: pointer;

@@ -142,9 +142,10 @@ export default {
   padding-top: 10px;
 }
 
-
-
 @media (min-width: 712px) {
-    
+  .accordion {
+    padding: unset;
+    margin-top: 40px;
+  }
 }
 </style>

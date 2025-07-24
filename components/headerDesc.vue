@@ -119,7 +119,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 32px;
-    border-bottom: 1px solid #eee;
     position: relative;
 
     &-left {
@@ -157,6 +156,11 @@
         height: 20px;
       }
     }
+  }
+
+
+  .header_desc{
+    padding: 33px 40px;
   }
 }
 </style>

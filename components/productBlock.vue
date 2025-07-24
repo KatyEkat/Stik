@@ -387,10 +387,16 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   padding: 31px 25px 0 17px;
-  max-width: 360px;
+  max-width: 400px;
 }
 
 @media (min-width: 712px) {
+
+  .product_info-block{
+    padding: 31px 0 0 40px;
+  }
+
+
   .slider-mob {
     display: none;
   }
@@ -465,12 +471,16 @@ export default {
     width: 470px;
     height: 700px;
   }
+
+  .dots {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
   .content-desctop {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     gap: 61px;
     padding: 0 72px;
   }
@@ -479,8 +489,14 @@ export default {
     display: none;
   }
 
-  .product_info-block{
+  .product_info-block {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-desctop {
+    width: fit-content;
   }
 }
 </style>

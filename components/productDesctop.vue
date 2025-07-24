@@ -74,9 +74,9 @@ export default {
 .product_details-right {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   max-width: 400px;
   padding-top: 32px;
+  padding: 0;
 
   .product_info-block-desc {
     display: none;
@@ -86,83 +86,105 @@ export default {
     display: none;
   }
 
-  @media (min-width: 1020px) {
-    padding-top: 0;
+}
 
-    .buttons_block-desc {
-      display: flex;
-      gap: 10px;
-    }
+@media (min-width: 712px) {
+  .product_details-right {
+    padding: 0 40px;
+  }
 
-    .product_button {
-      color: rgb(255, 255, 255);
-      font-family: "Helvetica";
-      font-size: 11px;
-      font-weight: 400;
-      line-height: 15px;
-      letter-spacing: 0%;
-      text-align: center;
+  .size_block {
+    padding: unset;
+    margin-top: 31px;
+  }
+
+  .color_picker {
+    padding: unset;
+    margin-top: 34px;
+  }
+
+  .product_desctop-right {
+    padding: 32px 0 0 40px;
+  }
+}
+
+@media (min-width: 1020px) {
+
+  .buttons_block-desc {
+    display: flex;
+    gap: 10px;
+    margin-top: 36px;
+  }
+
+  .product_button {
+    color: rgb(255, 255, 255);
+    font-family: "Helvetica";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 25px 15px 25px;
+    height: 44px;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .product_button:hover {
+    background: rgb(65, 65, 65);
+    transition: 0.2s;
+  }
+
+  .product_button:active {
+    background: rgb(97, 97, 97);
+  }
+
+  .save_button {
+    background: unset;
+    border: unset;
+    cursor: pointer;
+  }
+
+  .product_info-block-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: unset;
+    max-width: 360px;
+  }
+  .product_info {
+    color: rgb(51, 51, 51);
+    font-family: Helvetica;
+
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+
+    &-title {
       text-transform: uppercase;
-      padding: 15px 25px 15px 25px;
-      height: 44px;
-      background: rgb(0, 0, 0);
-      cursor: pointer;
+      color: #333;
+      font-size: 12px;
     }
 
-    .product_button:hover {
-      background: rgb(65, 65, 65);
-        transition: 0.2s;
-    }
-
-    .product_button:active {
-      background: rgb(97, 97, 97);
-    }
-
-
-    .save_button {
-      background: unset;
-      border: unset;
-      cursor: pointer;
-    }
-
-    .product_info-block-desc {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 31px 25px 0 17px;
-      max-width: 360px;
-    }
-    .product_info {
-      color: rgb(51, 51, 51);
-      font-family: Helvetica;
-
-      font-weight: 400;
-      line-height: 16px;
-      letter-spacing: 0%;
-      text-align: left;
-      text-transform: uppercase;
-
-      &-title {
-        text-transform: uppercase;
-        color: #333;
-        font-size: 12px;
-      }
-
-      &-price {
-        font-size: 12px;
-        margin-top: 5px;
-      }
-    }
-
-    .color_picker {
-      width: fit-content;
+    &-price {
+      font-size: 12px;
+      margin-top: 5px;
     }
   }
 
-  @media (min-width: 1200px) {
-    .product_button {
-      width: 306px;
-    }
+  .color_picker {
+    width: fit-content;
+    padding: unset;
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product_button {
+    width: 306px;
   }
 }
 </style>

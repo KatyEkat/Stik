@@ -58,7 +58,6 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 9px;
-
   padding: 31px 16px 0 16px;
 
   .label {
@@ -120,6 +119,25 @@ export default {
 
     &.disabled {
       color: #bdbdbd;
+    }
+  }
+
+  @media (min-width: 712px) {
+    /* .size_block {
+      padding: unset;
+      margin-top: 31px;
+    } */
+    .product_details-right {
+      /* padding: 32px 0 0 40px; */
+      padding: 31px 0 0 40px;
+    }
+
+
+  }
+
+  @media (min-width: 1020px) {
+    .size_block {
+      padding: 0;
     }
   }
 }
