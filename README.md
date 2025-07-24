@@ -19,7 +19,7 @@ $ npm run generate
 
 ## Project link
 
-https://stik-sandy.vercel.app/
+https://stik-murex.vercel.app/
 
 
 ### Contacts for communication on all issues
