@@ -96,7 +96,7 @@ export default {
 
   &-title {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 10px;
     color: #333;
   }
 
